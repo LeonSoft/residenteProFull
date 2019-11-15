@@ -1,0 +1,208 @@
+<div class="row">
+    <div class="col-md-12 grid-margin">
+        <div class="d-flex justify-content-between flex-wrap">
+            <div class="d-flex align-items-end flex-wrap">
+                <div class="mr-md-3 mr-xl-5">
+                    <td id="contentPage"></td>
+                    <h2>Editar cuota extraordinaria</h2>
+                    <p class="mb-md-0">Your analytics dashboard template.</p>
+                </div>
+                <div class="d-flex">
+                    <i class="mdi mdi-home text-muted hover-cursor"></i>
+                    <p class="text-muted mb-0 hover-cursor">Dashboard</p>
+                    <p class="text-primary mb-0 hover-cursor">Analytics</p>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-end flex-wrap">
+                <button type="button" class="btn btn-light bg-white btn-icon mr-3 d-none d-md-block ">
+                    <i class="mdi mdi-download text-muted"></i>
+                </button>
+                <button type="button" class="btn btn-light bg-white btn-icon mr-3 mt-2 mt-xl-0">
+                    <i class="mdi mdi-clock-outline text-muted"></i>
+                </button>
+                <button type="button" class="btn btn-light bg-white btn-icon mr-3 mt-2 mt-xl-0">
+                    <i class="mdi mdi-plus text-muted"></i>
+                </button>
+                <button class="btn btn-primary mt-2 mt-xl-0">Generate report</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- page information -->
+<form action="">
+
+    <div class="col-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+
+                <div class="row justify-content-md-center grid-margin stretch-card">
+                    <h2>Buscar cuota extraordinaria</h2>
+                </div>
+
+                <div class="row justify-content-md-center text-center">
+                    <div class="form-group col-md-6 col-xl-6 grid-margin stretch-card">
+                        <label for="SelectTower" class="col-sm-5 col-form-label">Fecha inicial</label>
+                        <input type="date" class="col-sm-6" />
+                    </div>
+                </div>
+
+                <div class="row justify-content-md-center text-center">
+                    <div class="form-group col-md-6 col-xl-6 grid-margin stretch-card">
+                        <label for="SelectTower" class="col-sm-5 col-form-label">Fecha Final</label>
+                        <input type="date" class="col-sm-6" />
+                    </div>
+                </div>
+
+                <div class="row justify-content-md-center text-center">
+                    <div class="form-group col-md-6 col-xl-6 grid-margin stretch-card">
+                        <label for="SelectTower" class="col-sm-5 col-form-label">Concepto</label>
+                        <select class="form-control col-sm-5 d-inline" id="SelectTower">
+                            <option>Inasistencia Asamblea</option>
+                            <option>Arrojar basura en lugares no establecidos</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row justify-content-md-center ">
+                        <div class="justify-content-between-center col-6 text-center  ">
+                            <button type="reset" class="btn btn-outline-primary btn-fw col-5">
+                                limpiar
+                            </button>
+                            <a href="#showTable">
+                                <button type="button" class="btn btn-outline-primary btn-fw col-5">
+                                    Buscar
+                                </button>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+<div class="container-scroller">
+    <div class="container-fluid page-body-wrapper pt-0">
+        <div class="main-panel w-100">
+            <div class="content-wrapper">
+                <div class="row">
+                    <div class="col-md-12 stretch-card">
+                        <div class="card" ">
+                            <div class=" card-body">
+                            <p class="card-title" id="showTable">Resultados</p>
+                            <div class="table-responsive">
+                                <table id="recent-purchases-listing" class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Concepto</th>
+                                            <th>Fecha limite</th>
+                                            <th>Valor total</th>
+                                            <th>% Intereses de mora</th>
+                                            <th>Modificar</th>
+                                            <th>Eliminar</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Jeremy Ortega</td>
+                                            <td>Levelled up</td>
+                                            <td>Catalinaborough</td>
+                                            <td>$790</td>
+                                            <td>06 Jan 2018</td>
+                                            <td>Modificar</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Alvin Fisher</td>
+                                            <td>Ui design completed</td>
+                                            <td>East Mayra</td>
+                                            <td>$23230</td>
+                                            <td>18 Jul 2018</td>
+                                            <td>Modificar</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Emily Cunningham</td>
+                                            <td>support</td>
+                                            <td>Makennaton</td>
+                                            <td>$939</td>
+                                            <td>16 Jul 2018</td>
+                                            <td>Modificar</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Minnie Farmer</td>
+                                            <td>support</td>
+                                            <td>Agustinaborough</td>
+                                            <td>$30</td>
+                                            <td>30 Apr 2018</td>
+                                            <td>Modificar</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Betty Hunt</td>
+                                            <td>Ui design not completed</td>
+                                            <td>Lake Sandrafort</td>
+                                            <td>$571</td>
+                                            <td>25 Jun 2018</td>
+                                            <td>Modificar</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Myrtie Lambert</td>
+                                            <td>Ui design completed</td>
+                                            <td>Cassinbury</td>
+                                            <td>$36</td>
+                                            <td>05 Nov 2018</td>
+                                            <td>Modificar</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jacob Kennedy</td>
+                                            <td>New project</td>
+                                            <td>Cletaborough</td>
+                                            <td>$314</td>
+                                            <td>12 Jul 2018</td>
+                                            <td>Modificar</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ernest Wade</td>
+                                            <td>Levelled up</td>
+                                            <td>West Fidelmouth</td>
+                                            <td>$484</td>
+                                            <td>08 Sep 2018</td>
+                                            <td>Modificar</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- main-panel ends -->
+</div>
+<!-- page-body-wrapper ends -->
+</div>
+<!-- container-scroller -->
+
+
+<!-- plugins:js -->
+<script src="vendors/base/vendor.bundle.base.js"></script>
+<!-- endinject -->
+<!-- Plugin js for this page-->
+<script src="vendors/chart.js/Chart.min.js"></script>
+<script src="vendors/datatables.net/jquery.dataTables.js"></script>
+<script src="vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
+<!-- End plugin js for this page-->
+<!-- inject:js -->
+<script src="js/off-canvas.js"></script>
+<script src="js/hoverable-collapse.js"></script>
+<script src="js/template.js"></script>
+<!-- endinject -->
+<!-- Custom js for this page-->
+<script src="js/dashboard.js"></script>
+<script src="js/data-table.js"></script>
+<script src="js/jquery.dataTables.js"></script>
+<script src="js/dataTables.bootstrap4.js"></script>
+<!-- End custom js for this page-->

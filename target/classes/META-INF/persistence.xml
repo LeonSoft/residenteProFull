@@ -1,0 +1,54 @@
+
+	<persistence version="2.0"
+             xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+  <persistence-unit name="residente_pu" transaction-type="JTA">  
+  <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+  	<jta-data-source>bd_residente</jta-data-source>
+  	<class>com.leonsoftware.residentepro.model.TbArchivo</class>
+  	<class>com.leonsoftware.residentepro.model.TbAsamblea</class>
+  	<class>com.leonsoftware.residentepro.model.TbCatalogo</class>
+  	<class>com.leonsoftware.residentepro.model.TbConjunto</class>
+  	<class>com.leonsoftware.residentepro.model.TbCuota</class>
+  	<class>com.leonsoftware.residentepro.model.TbEleccion</class>
+  	<class>com.leonsoftware.residentepro.model.TbEleccionPK</class>
+  	<class>com.leonsoftware.residentepro.model.TbInmueble</class>
+  	<class>com.leonsoftware.residentepro.model.TbInmueblePK</class>
+  	<class>com.leonsoftware.residentepro.model.TbListaCatalogo</class>
+  	<class>com.leonsoftware.residentepro.model.TbListaCatalogoPK</class>
+  	<class>com.leonsoftware.residentepro.model.TbMenu</class>
+  	<class>com.leonsoftware.residentepro.model.TbModulo</class>
+  	<class>com.leonsoftware.residentepro.model.TbModuloPerfil</class>
+  	<class>com.leonsoftware.residentepro.model.TbModuloPerfilPK</class>
+  	<class>com.leonsoftware.residentepro.model.TbOpcion</class>
+  	<class>com.leonsoftware.residentepro.model.TbOpcionPK</class>
+  	<class>com.leonsoftware.residentepro.model.TbPago</class>
+  	<class>com.leonsoftware.residentepro.model.TbPagoPK</class>
+  	<class>com.leonsoftware.residentepro.model.TbParqueadero</class>
+  	<class>com.leonsoftware.residentepro.model.TbPerfil</class>
+  	<class>com.leonsoftware.residentepro.model.TbPropuesta</class>
+  	<class>com.leonsoftware.residentepro.model.TbReserva</class>
+  	<class>com.leonsoftware.residentepro.model.TbUbicacion</class>
+  	<class>com.leonsoftware.residentepro.model.TbUbicacionPK</class>
+  	<class>com.leonsoftware.residentepro.model.TbUsuario</class>
+  	<class>com.leonsoftware.residentepro.model.TbUsuarioPK</class>
+  	<class>com.leonsoftware.residentepro.model.TbZonaComun</class>
+  	<class>com.leonsoftware.residentepro.model.TbZonaComunPK</class>
+  	<class>com.leonsoftware.residentepro.model.TbSolicitud</class>
+  	<class>com.leonsoftware.residentepro.model.TbRespuesta</class>
+  	<class>com.leonsoftware.residentepro.model.TbRespuestaPK</class>
+    <properties>
+      <property name="eclipselink.target-database" value="org.eclipse.persistence.platform.database.MySQLPlatform"/>
+      <property name="eclipselink.ddl-generation" value="create-tables"/>
+      <property name="eclipselink.ddl-generation.output-mode" value="database"/>
+      <property name="eclipselink.weaving" value="static"/>
+      <property name="eclipselink.logging.logger" value="ServerLogger"/>
+      <property name="eclipselink.logging.level.sql" value="FINEST"/>
+	  <property name="eclipselink.logging.parameters" value="true"/>
+      <property name="eclipselink.deploy-on-startup" value="True" />
+      <property name="eclipselink.logging.level" value="ALL" />
+      
+    </properties>
+  </persistence-unit>
+</persistence>

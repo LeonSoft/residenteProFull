@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+problem.DESCRIPTOR_CUSTOMIZER_CLASS_NOT_SPECIFIED=error
+problem.EXCEPTION_HANDLER_CLASS_NOT_VALID=error
+problem.SESSION_PROFILER_CLASS_NOT_VALID=error
+workspace_validation_preferences_overridden=true

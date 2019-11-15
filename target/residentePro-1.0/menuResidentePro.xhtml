@@ -1,0 +1,431 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"      
+      xmlns:f="http://java.sun.com/jsf/core">            
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Majestic Admin</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="vendors/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="vendors/base/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <link rel="stylesheet" href="vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="images/favicon.png" />
+  <script src="jquery.min.js"></script>
+  <link href="css/bootstrap-4-navbar.css" rel="stylesheet">
+  <script>
+    $(document).ready(function () {
+      $('#consulEjecutarPagos').click(function () {
+        $("#contentPage").load("partials/contents/_consulEjecutarPagos.html");
+      });
+
+      $('#consulEstadoPagos').click(function () {
+        $("#contentPage").load("partials/contents/_consulEstadoPagos.html");
+      });
+
+      $('#crearAcuerdosPagos').click(function () {
+        $("#contentPage").load("partials/contents/_crearAcuerdosPagos.html");
+      });
+
+      $('#editarAcuerdosPagos').click(function () {
+        $("#contentPage").load("partials/contents/_editarAcuerdosPagos.html");
+      });
+
+      $('#crearMultas').click(function () {
+        $("#contentPage").load("partials/contents/_crearMultas.html");
+      });
+
+      $('#editarMultas').click(function () {
+        $("#contentPage").load("partials/contents/_editarMultas.html");
+      });
+
+      $('#crearCuotaExtraordinaria').click(function () {
+        $("#contentPage").load("partials/contents/_crearCuotaExtraordinaria.html");
+      });
+
+      $('#editarCuotaExtraordinaria').click(function () {
+        $("#contentPage").load("partials/contents/_editarCuotaExtraordinaria.html");
+      });
+
+      $('#reservarZona').click(function () {
+        $("#contentPage").load("partials/contents/_reservarZona.html");
+      });
+
+      $('#asignarParqueaderos').click(function () {
+        $("#contentPage").load("partials/contents/_asignarParqueaderos.html");
+      });
+
+      $('#editarParqueaderos').click(function () {
+        $("#contentPage").load("partials/contents/_editarParqueaderos.html");
+      });
+
+      $('#nuevaSolicitud').click(function () {
+        $("#contentPage").load("partials/contents/_nuevaSolicitud.html");
+      });
+
+      $('#consulSolicitudes').click(function () {
+        $("#contentPage").load("partials/contents/_consulSolicitudes.html");
+      });
+
+      $('#editarEstadoPQR').click(function () {
+        $("#contentPage").load("partials/contents/_editarEstadoPQR.html");
+      });
+
+      $('#descargarArchivos').click(function () {
+        $("#contentPage").load("partials/contents/_descargarArchivos.html");
+      });
+
+      $('#subirArchivos').click(function () {
+        $("#contentPage").load("partials/contents/_subirArchivos.html");
+      });
+
+      $('#eliminarArchivos').click(function () {
+        $("#contentPage").load("partials/contents/_eliminarArchivos.html");
+      });
+
+      $('#crearUsuarioResidente').click(function () {
+        $("#contentPage").load("partials/contents/_crearUsuarioResidente.html");
+      });
+
+      $('#editarUsuarioResidente').click(function () {
+        $("#contentPage").load("partials/contents/_editarUsuarioResidente.html");
+      });
+
+      $('#crearUsuarioAdministrador').click(function () {
+        $("#contentPage").load("partials/contents/_crearUsuarioAdministrador.html");
+      });
+
+      $('#editarUsuarioAdministrador').click(function () {
+        $("#contentPage").load("partials/contents/_editarUsuarioAdministrador.html");
+      });
+
+      $('#crearConjuntos').click(function () {
+        $("#contentPage").load("partials/contents/_crearConjuntos.html");
+      });
+
+      $('#editarConjuntos').click(function () {
+        $("#contentPage").load("partials/contents/_editarConjuntos.html");
+      });
+
+      $('#parametriSistema').click(function () {
+        $("#contentPage").load("partials/contents/_parametriSistema.html");
+      });
+
+    });
+  </script>
+</head>
+
+<body>
+  <!-- partial:partials/_navbar.html -->
+  <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+    <div class="navbar-brand-wrapper d-flex justify-content-center">
+      <div class="navbar-brand-inner-wrapper d-flex justify-content-between align-items-center w-100">
+        <a class="navbar-brand brand-logo" href="welcomePage.html"><img src="images/logoResidente.svg" alt="logo" /></a>
+        <a class="navbar-brand brand-logo-mini" href="welcomePage.html"><img src="images/logo-mini.svg" alt="logo" /></a>
+        <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+          <span class="mdi mdi-sort-variant"></span>
+        </button>
+      </div>
+    </div>
+    <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+      <ul class="navbar-nav mr-lg-4 w-100">
+        <li class="nav-item nav-search d-none d-lg-block w-100">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="search">
+                <i class="mdi mdi-magnify"></i>
+              </span>
+            </div>
+            <input type="text" class="form-control" placeholder="Search now" aria-label="search"
+              aria-describedby="search">
+          </div>
+        </li>
+      </ul>
+      <ul class="navbar-nav navbar-nav-right">
+        <li class="nav-item dropdown mr-1">
+          <a class="nav-link count-indicator dropdown-toggle d-flex justify-content-center align-items-center"
+            id="messageDropdown" href="#" data-toggle="dropdown">
+            <i class="mdi mdi-message-text mx-0"></i>
+            <span class="count"></span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="messageDropdown">
+            <p class="mb-0 font-weight-normal float-left dropdown-header">Messages</p>
+            <a class="dropdown-item">
+              <div class="item-thumbnail">
+                <img src="images/faces/face4.jpg" alt="image" class="profile-pic">
+              </div>
+              <div class="item-content flex-grow">
+                <h6 class="ellipsis font-weight-normal">David Grey
+                </h6>
+                <p class="font-weight-light small-text text-muted mb-0">
+                  The meeting is cancelled
+                </p>
+              </div>
+            </a>
+            <a class="dropdown-item">
+              <div class="item-thumbnail">
+                <img src="images/faces/face2.jpg" alt="image" class="profile-pic">
+              </div>
+              <div class="item-content flex-grow">
+                <h6 class="ellipsis font-weight-normal">Tim Cook
+                </h6>
+                <p class="font-weight-light small-text text-muted mb-0">
+                  New product launch
+                </p>
+              </div>
+            </a>
+            <a class="dropdown-item">
+              <div class="item-thumbnail">
+                <img src="images/faces/face3.jpg" alt="image" class="profile-pic">
+              </div>
+              <div class="item-content flex-grow">
+                <h6 class="ellipsis font-weight-normal"> Johnson
+                </h6>
+                <p class="font-weight-light small-text text-muted mb-0">
+                  Upcoming board meeting
+                </p>
+              </div>
+            </a>
+          </div>
+        </li>
+        <li class="nav-item dropdown mr-4">
+          <a class="nav-link count-indicator dropdown-toggle d-flex align-items-center justify-content-center notification-dropdown"
+            id="notificationDropdown" href="#" data-toggle="dropdown">
+            <i class="mdi mdi-bell mx-0"></i>
+            <span class="count"></span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="notificationDropdown">
+            <p class="mb-0 font-weight-normal float-left dropdown-header">Notifications</p>
+            <a class="dropdown-item">
+              <div class="item-thumbnail">
+                <div class="item-icon bg-success">
+                  <i class="mdi mdi-information mx-0"></i>
+                </div>
+              </div>
+              <div class="item-content">
+                <h6 class="font-weight-normal">Application Error</h6>
+                <p class="font-weight-light small-text mb-0 text-muted">
+                  Just now
+                </p>
+              </div>
+            </a>
+            <a class="dropdown-item">
+              <div class="item-thumbnail">
+                <div class="item-icon bg-warning">
+                  <i class="mdi mdi-settings mx-0"></i>
+                </div>
+              </div>
+              <div class="item-content">
+                <h6 class="font-weight-normal">Settings</h6>
+                <p class="font-weight-light small-text mb-0 text-muted">
+                  Private message
+                </p>
+              </div>
+            </a>
+            <a class="dropdown-item">
+              <div class="item-thumbnail">
+                <div class="item-icon bg-info">
+                  <i class="mdi mdi-account-box mx-0"></i>
+                </div>
+              </div>
+              <div class="item-content">
+                <h6 class="font-weight-normal">New user registration</h6>
+                <p class="font-weight-light small-text mb-0 text-muted">
+                  2 days ago
+                </p>
+              </div>
+            </a>
+          </div>
+        </li>
+        <li class="nav-item nav-profile dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
+            <img src="images/faces/face5.jpg" alt="profile" />
+            <!-- atrapar nombre -->
+            <span class="nav-profile-name">SysAdmon</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
+            <a class="dropdown-item">
+              <i class="mdi mdi-settings text-primary"></i>
+              Settings
+            </a>
+            <a class="dropdown-item">
+              <i class="mdi mdi-logout text-primary"></i>
+              Logout
+            </a>
+          </div>
+        </li>
+      </ul>
+      <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+        data-toggle="offcanvas">
+        <span class="mdi mdi-menu"></span>
+      </button>
+    </div>
+  </nav>
+  <!-- partial -->
+  <div class="container-fluid page-body-wrapper">
+    <!-- partial:partials/_sidebar.html -->
+    <nav class="sidebar sidebar-offcanvas" id="sidebar">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class="mdi mdi-home menu-icon"></i>
+            <span class="menu-title">Inicio</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="collapse" href="#collapGestionPagos" aria-expanded="false" aria-controls="collapGestionPagos">
+            <i class="mdi mdi-square-inc-cash menu-icon"></i>
+            <span class="menu-title">Gestión de Pagos</span>
+            <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="collapGestionPagos">
+            <ul class="nav flex-column sub-menu">
+              <li class="nav-item"> <a class="nav-link" href="#" id="consulEstadoPagos">Consultar estado de pagos</a></li>
+              <li class="nav-item"> <a class="nav-link" href="#" id="crearAcuerdosPagos">Crear acuerdos de Pagos</a></li>
+              <li class="nav-item"> <a class="nav-link" href="#" id="editarAcuerdosPagos">Editar acuerdos de Pagos</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="collapse" href="#collGestionMultas" aria-expanded="false" aria-controls="collGestionMultas">
+            <i class="mdi mdi-cctv menu-icon"></i>
+            <span class="menu-title">Gestión de multas y cuotas</span>
+            <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="collGestionMultas">
+            <ul class="nav flex-column sub-menu">
+              <li class="nav-item"> <a class="nav-link" href="#" id="crearMultas">Crear multas</a></li>
+              <li class="nav-item"> <a class="nav-link" href="#" id="editarMultas">Editar multas</a></li>
+              <li class="nav-item"> <a class="nav-link" href="#" id="crearCuotaExtraordinaria">Crear cuota extraordinaria</a></li>
+              <li class="nav-item"> <a class="nav-link" href="#" id="editarCuotaExtraordinaria">Editar cuota extraordinaria</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="collapse" href="#collGestionZonas" aria-expanded="false" aria-controls="collGestionZonas">
+            <i class="mdi mdi-car-wash menu-icon"></i>
+            <span class="menu-title">Gestión de zonas comunes</span>
+            <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="collGestionZonas">
+            <ul class="nav flex-column sub-menu">
+              <li class="nav-item"> <a class="nav-link" href="#" id="asignarParqueaderos">Asignar parqueaderos</a></li>
+              <li class="nav-item"> <a class="nav-link" href="#" id="editarParqueaderos">Editar parqueaderos</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="collapse" href="#collGestionPQRS" aria-expanded="false" aria-controls="collGestionPQRS">
+            <i class="mdi mdi-headset menu-icon"></i>
+            <span class="menu-title">Gestión de PQRS</span>
+            <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="collGestionPQRS">
+            <ul class="nav flex-column sub-menu">
+              <li class="nav-item"> <a class="nav-link" href="#" id="editarEstadoPQR">Editar estado PQRS</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="collapse" href="#collGestionArchivos" aria-expanded="false" aria-controls="collGestionArchivos">
+            <i class="mdi mdi-folder-multiple menu-icon"></i>
+            <span class="menu-title">Gestión de archivos</span>
+            <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="collGestionArchivos">
+            <ul class="nav flex-column sub-menu">
+              <li class="nav-item"> <a class="nav-link" href="#" id="subirArchivos">Subir archivos</a></li>
+              <li class="nav-item"> <a class="nav-link" href="#" id="eliminarArchivos">Eliminar archivos</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="collapse" href="#collGestionUsuarios" aria-expanded="false" aria-controls="collGestionUsuarios">
+            <i class="mdi mdi-account-edit menu-icon"></i>
+            <span class="menu-title">Gestión de usuarios</span>
+            <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="collGestionUsuarios">
+            <ul class="nav flex-column sub-menu">
+              <li class="nav-item"> <a class="nav-link" href="#" id="crearUsuarioResidente">Crear usuario residente</a></li>
+              <li class="nav-item"> <a class="nav-link" href="#" id="editarUsuarioResidente">Editar usuario residente</a></li>
+              <li class="nav-item"> <a class="nav-link" href="#" id="crearUsuarioAdministrador">Crear usuario administrador</a></li>
+              <li class="nav-item"> <a class="nav-link" href="#" id="editarUsuarioAdministrador">Editar usuario administrador</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="collapse" href="#collGestionConjuntos" aria-expanded="false" aria-controls="collGestionConjuntos">
+            <i class="mdi mdi-home-modern menu-icon"></i>
+            <span class="menu-title">Gestión de conjuntos</span>
+            <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="collGestionConjuntos">
+            <ul class="nav flex-column sub-menu">
+              <li class="nav-item"> <a class="nav-link" href="#" id="crearConjuntos">Crear conjunto</a></li>
+              <li class="nav-item"> <a class="nav-link" href="#" id="editarConjuntos">Editar conjunto</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class="mdi mdi-logout-variant menu-icon"></i>
+            <span class="menu-title">salir</span>
+          </a>
+        </li>
+
+        
+      </ul>
+    </nav>
+
+    <!-- partial -->
+    <div class="main-panel ">
+      <div class="content-wrapper">
+        <div id="contentPage">
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- plugins:js -->
+  <script src="vendors/base/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page-->
+  <script src="vendors/chart.js/Chart.min.js"></script>
+  <script src="vendors/datatables.net/jquery.dataTables.js"></script>
+  <script src="vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
+  <!-- End plugin js for this page-->
+  <!-- inject:js -->
+  <script src="js/off-canvas.js"></script>
+  <script src="js/hoverable-collapse.js"></script>
+  <script src="js/template.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="js/dashboard.js"></script>
+  <script src="js/data-table.js"></script>
+  <script src="js/jquery.dataTables.js"></script>
+  <script src="js/dataTables.bootstrap4.js"></script>
+  <!-- End custom js for this page-->
+  <script src="js/bootstrap-4-navbar.js"></script>
+</body>
+
+</html>
