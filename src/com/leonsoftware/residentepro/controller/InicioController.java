@@ -21,10 +21,6 @@ import com.leonsoftware.residentepro.util.cargaMensajes.ConstantesResidentePro;
 import com.leonsoftware.residentepro.util.cargaMensajes.UtilitarioLeonSoftware;
 import com.leonsoftware.residentepro.util.excepcion.GeneralException;
 
-/*import com.leonsoftware.residentepro.ejb.UsuarioFacade;
-import com.leonsoftware.residentepro.modelo.TbUsuario;
-import com.leonsoftware.residentepro.util.excepcion.GeneralException;*/
-
 
 /**
  * Clase para la gestion del formulario de autenticacion
@@ -61,20 +57,20 @@ public class InicioController implements Serializable{
      * @return regla de navegación
      */
     public String iniciaSesion(){        
-        String urlAutentica = null;
+        String reglaNavega = null;
         TbUsuario usuarioAux;        
         try{
             usuarioAux = this.EJBusuario.buscarUsuario(this.usuario) ;
             if (usuarioAux != null){
                 FacesContext.getCurrentInstance().getExternalContext().getSessionMap().put("usuario", usuarioAux);
-                urlAutentica = "menuResidentePro";
+                reglaNavega = "usuarioExiste";
             }else{
                 throw new GeneralException(this.mensajes.getString(ConstantesResidentePro.MSJ_ERROR_AUTENTICACION)); 
             }
         }catch(GeneralException e){
             FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_WARN, e.getMessage(), e.getMessage()));
         }  
-        return urlAutentica;
+        return reglaNavega;
     }
     
 	public String loggout (){

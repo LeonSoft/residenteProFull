@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pageflow:Pageflow xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf15736640332210" configfile="/residentePro/WebContent/WEB-INF/faces-config.xml"/>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf15736640332210" configfile="/residentePro/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="inicio.xhtml" id="pf15738329251200" referenceLink="//@navigationRule.0/@fromViewId|" outlinks="pf15738329251211" path="/inicio.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="menuResidentePro.xhtml" id="pf15738329251212" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" inlinks="pf15738329251211" path="/menuResidentePro.xhtml"/>
+  <links id="pf15738329251211" target="pf15738329251212" source="pf15738329251200" outcome="usuarioExiste"/>
+</pageflow:Pageflow>
