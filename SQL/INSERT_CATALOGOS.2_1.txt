@@ -1,0 +1,93 @@
+
+/*
+Tabla tb_catalogo
+*/
+
+
+INSERT INTO `tb_catalogo` VALUES ('TZONCM','TIPO ZONA COMUN','2019-10-23 08:12:00','adminResidente','2019-10-23 08:12:00','adminResidente');
+INSERT INTO `tb_catalogo` VALUES ('PUSU','PERFIL USUARIO','2019-10-23 08:12:00','adminResidente','2019-10-23 08:12:00','adminResidente');
+INSERT INTO `tb_catalogo` VALUES ('TID','TIPO ID','2019-10-23 08:12:00','adminResidente','2019-10-23 08:12:00','adminResidente');
+INSERT INTO `tb_catalogo` VALUES ('TPAG','TIPO DE PAGO','2019-10-23 08:12:00','adminResidente','2019-10-23 08:12:00','adminResidente');
+INSERT INTO `tb_catalogo` VALUES ('EPAGO','ESTADO PAGO','2019-10-23 08:12:00','adminResidente','2019-10-23 08:12:00','adminResidente');
+INSERT INTO `tb_catalogo` VALUES ('TPQR','TIPO DE PQR','2019-10-23 08:12:00','adminResidente','2019-10-23 08:12:00','adminResidente');
+INSERT INTO `tb_catalogo` VALUES ('EPQR','ESTADO DE PQR','2019-10-23 08:12:00','adminResidente','2019-10-23 08:12:00','adminResidente');
+INSERT INTO `tb_catalogo` VALUES ('CMULT','CONCEPTO MULTA','2019-10-23 08:12:00','adminResidente','2019-10-23 08:12:00','adminResidente');
+INSERT INTO `tb_catalogo` VALUES ('CCEXT','CONCEPTO CUOTA EXTRAORDINARIA','2019-10-23 08:12:00','adminResidente','2019-10-23 08:12:00','adminResidente');
+INSERT INTO `tb_catalogo` VALUES ('FPAGO ','FRECUENCIA PAGO','2019-10-23 08:12:00','adminResidente','2019-10-23 08:12:00','adminResidente');
+
+
+
+
+/*
+Tabla tb_lista_catalogo
+*/
+
+INSERT INTO `tb_lista_catalogo` VALUES ('SLCM','TZONCM','SALON COMUNAL','2019-10-23 08:15:00','adminResidente','2019-10-23 08:12:00','adminResidente');
+INSERT INTO `tb_lista_catalogo` VALUES ('SLCMG','TZONCM','SALON COMUNAL GRANDE','2019-10-23 08:12:00','adminResidente','2019-10-23 08:12:00','adminResidente');
+INSERT INTO `tb_lista_catalogo` VALUES ('SLCMP','TZONCM','SALON COMUNAL PEQUEÑO','2019-10-23 08:12:00','adminResidente','2019-10-23 08:12:00','adminResidente');
+INSERT INTO `tb_lista_catalogo` VALUES ('PISC','TZONCM','PISCINA','2019-10-23 08:12:00','adminResidente','2019-10-23 08:12:00','adminResidente');
+INSERT INTO `tb_lista_catalogo` VALUES ('SBILL','TZONCM','SALA DE BILLAR','2019-10-23 08:12:00','adminResidente','2019-10-23 08:12:00','adminResidente');
+INSERT INTO `tb_lista_catalogo` VALUES ('SAUN','TZONCM','SAUNA','2019-10-23 08:12:00','adminResidente','2019-10-23 08:12:00','adminResidente');
+INSERT INTO `tb_lista_catalogo` VALUES ('JACU','TZONCM','JACUZZI','2019-10-23 08:12:00','adminResidente','2019-10-23 08:12:00','adminResidente');
+INSERT INTO `tb_lista_catalogo` VALUES ('ZHUM','TZONCM','ZONA HUMEDA','2019-10-23 08:12:00','adminResidente','2019-10-23 08:12:00','adminResidente');
+INSERT INTO `tb_lista_catalogo` VALUES ('SJUE','TZONCM','SALON  DE JUEGOS','2019-10-23 08:12:00','adminResidente','2019-10-23 08:12:00','adminResidente');
+INSERT INTO `tb_lista_catalogo` VALUES ('TERR','TZONCM','TERRAZA','2019-10-23 08:12:00','adminResidente','2019-10-23 08:12:00','adminResidente');
+INSERT INTO `tb_lista_catalogo` VALUES ('BBQ','TZONCM','BARBECUE','2019-10-23 08:12:00','adminResidente','2019-10-23 08:12:00','adminResidente');
+INSERT INTO `tb_lista_catalogo` VALUES ('SNEG','TZONCM','SALA DE NEGOCIOS','2019-10-23 08:12:00','adminResidente','2019-10-23 08:12:00','adminResidente');
+INSERT INTO `tb_lista_catalogo` VALUES ('GIM','TZONCM','GIMNASIO','2019-10-23 08:12:00','adminResidente','2019-10-23 08:12:00','adminResidente');
+INSERT INTO `tb_lista_catalogo` VALUES ('CFUT','TZONCM','CANCHA DE FUTBOL','2019-10-23 08:12:00','adminResidente','2019-10-23 08:12:00','adminResidente');
+INSERT INTO `tb_lista_catalogo` VALUES ('CBAS','TZONCM','CANCHA DE BASQUET','2019-10-23 08:12:00','adminResidente','2019-10-23 08:12:00','adminResidente');
+INSERT INTO `tb_lista_catalogo` VALUES ('BIBL','TZONCM','BIBLIOTECA','2019-10-23 08:12:00','adminResidente','2019-10-23 08:12:00','adminResidente');
+INSERT INTO `tb_lista_catalogo` VALUES ('BAR','TZONCM','BAR','2019-10-23 08:12:00','adminResidente','2019-10-23 08:12:00','adminResidente');
+
+INSERT INTO `tb_lista_catalogo` VALUES ('ADM','PUSU','ADMINISTRADOR','2019-10-23 08:12:00','adminResidente','2019-10-23 08:12:00','adminResidente');
+INSERT INTO `tb_lista_catalogo` VALUES ('SADM','PUSU','SYSADMON','2019-10-23 08:12:00','adminResidente','2019-10-23 08:12:00','adminResidente');
+INSERT INTO `tb_lista_catalogo` VALUES ('RESID','PUSU','RESIDENTE','2019-10-23 08:12:00','adminResidente','2019-10-23 08:12:00','adminResidente');
+
+INSERT INTO `tb_lista_catalogo` VALUES ('CC','TID','CEDULA DE CIUDADANIA','2019-10-23 08:12:00','adminResidente','2019-10-23 08:12:00','adminResidente');
+INSERT INTO `tb_lista_catalogo` VALUES ('CE','TID','CEDULA DE EXTRANJERIA','2019-10-23 08:12:00','adminResidente','2019-10-23 08:12:00','adminResidente');
+INSERT INTO `tb_lista_catalogo` VALUES ('PAST','TID','PASAPORTE','2019-10-23 08:12:00','adminResidente','2019-10-23 08:12:00','adminResidente');
+
+INSERT INTO `tb_lista_catalogo` VALUES ('ADMON','TPAG','AMINISTRACION','2019-10-23 08:12:00','adminResidente','2019-10-23 08:12:00','adminResidente');
+INSERT INTO `tb_lista_catalogo` VALUES ('CEXT','TPAG','CUOTA EXTRAORDINARIA','2019-10-23 08:12:00','adminResidente','2019-10-23 08:12:00','adminResidente');
+INSERT INTO `tb_lista_catalogo` VALUES ('MULT','TPAG','MULTA','2019-10-23 08:12:00','adminResidente','2019-10-23 08:12:00','adminResidente');
+INSERT INTO `tb_lista_catalogo` VALUES ('PARQ','TPAG','PARQUEADERO','2019-10-23 08:12:00','adminResidente','2019-10-23 08:12:00','adminResidente');
+INSERT INTO `tb_lista_catalogo` VALUES ('RZOC','TPAG','RESERVA ZONA COMUN','2019-10-23 08:12:00','adminResidente','2019-10-23 08:12:00','adminResidente');
+INSERT INTO `tb_lista_catalogo` VALUES ('APAG','TPAG','ACUERDO DE PAGO','2019-10-23 08:12:00','adminResidente','2019-10-23 08:12:00','adminResidente');
+
+INSERT INTO `tb_lista_catalogo` VALUES ('PEDT','EPAGO','PENDIENTE','2019-10-23 08:12:00','adminResidente','2019-10-23 08:12:00','adminResidente');
+INSERT INTO `tb_lista_catalogo` VALUES ('CANC','EPAGO','CANCELADO','2019-10-23 08:12:00','adminResidente','2019-10-23 08:12:00','adminResidente');
+INSERT INTO `tb_lista_catalogo` VALUES ('MORA','EPAGO','MORA','2019-10-23 08:12:00','adminResidente','2019-10-23 08:12:00','adminResidente');
+INSERT INTO `tb_lista_catalogo` VALUES ('CJURD','EPAGO','COBRO JURIDICO','2019-10-23 08:12:00','adminResidente','2019-10-23 08:12:00','adminResidente');
+
+INSERT INTO `tb_lista_catalogo` VALUES ('PET','TPQR','PETICION','2019-10-23 08:12:00','adminResidente','2019-10-23 08:12:00','adminResidente');
+INSERT INTO `tb_lista_catalogo` VALUES ('QUEJ','TPQR','QUEJA','2019-10-23 08:12:00','adminResidente','2019-10-23 08:12:00','adminResidente');
+INSERT INTO `tb_lista_catalogo` VALUES ('REC','TPQR','RECURSO','2019-10-23 08:12:00','adminResidente','2019-10-23 08:12:00','adminResidente');
+
+
+INSERT INTO `tb_lista_catalogo` VALUES ('ABTO','EPQR','ABIERTO','2019-10-23 08:12:00','adminResidente','2019-10-23 08:12:00','adminResidente');
+INSERT INTO `tb_lista_catalogo` VALUES ('PROC','EPQR','EN PROCESO','2019-10-23 08:12:00','adminResidente','2019-10-23 08:12:00','adminResidente');
+INSERT INTO `tb_lista_catalogo` VALUES ('CERR','EPQR','CERRADO','2019-10-23 08:12:00','adminResidente','2019-10-23 08:12:00','adminResidente');
+
+INSERT INTO `tb_lista_catalogo` VALUES ('ERUID','CMULT','EXCESO DE RUIDO','2019-10-23 08:12:00','adminResidente','2019-10-23 08:12:00','adminResidente');
+INSERT INTO `tb_lista_catalogo` VALUES ('NLH','CMULT','NO LIMPIAR HECES','2019-10-23 08:12:00','adminResidente','2019-10-23 08:12:00','adminResidente');
+INSERT INTO `tb_lista_catalogo` VALUES ('DIST','CMULT','DISTURBIO','2019-10-23 08:12:00','adminResidente','2019-10-23 08:12:00','adminResidente');
+INSERT INTO `tb_lista_catalogo` VALUES ('DZON','CMULT','DAÑOS EN ZONA COMUN','2019-10-23 08:12:00','adminResidente','2019-10-23 08:12:00','adminResidente');
+INSERT INTO `tb_lista_catalogo` VALUES ('AORD','CMULT','ALTERACION DEL ORDEN','2019-10-23 08:12:00','adminResidente','2019-10-23 08:12:00','adminResidente');
+INSERT INTO `tb_lista_catalogo` VALUES ('IASAM','CMULT','INASISTENCIA A ASAMBLEA','2019-10-23 08:12:00','adminResidente','2019-10-23 08:12:00','adminResidente');
+
+
+INSERT INTO `tb_lista_catalogo` VALUES ('ARRE','CCEXT','ARREGLOS','2019-10-23 08:12:00','adminResidente','2019-10-23 08:12:00','adminResidente');
+INSERT INTO `tb_lista_catalogo` VALUES ('MANT','CCEXT','MANTENIMIENTOS','2019-10-23 08:12:00','adminResidente','2019-10-23 08:12:00','adminResidente');
+INSERT INTO `tb_lista_catalogo` VALUES ('PINTF','CCEXT','PINTURA DE FACHADAS','2019-10-23 08:12:00','adminResidente','2019-10-23 08:12:00','adminResidente');
+INSERT INTO `tb_lista_catalogo` VALUES ('FUM','CCEXT','FUMIGACION','2019-10-23 08:12:00','adminResidente','2019-10-23 08:12:00','adminResidente');
+INSERT INTO `tb_lista_catalogo` VALUES ('ADEC','CCEXT','ADECUACIONES','2019-10-23 08:12:00','adminResidente','2019-10-23 08:12:00','adminResidente');
+INSERT INTO `tb_lista_catalogo` VALUES ('CONST','CCEXT','CONSTRUCCIONES','2019-10-23 08:12:00','adminResidente','2019-10-23 08:12:00','adminResidente');
+
+INSERT INTO `tb_lista_catalogo` VALUES ('MES','FPAGO','MENSUAL','2019-10-23 08:12:00','adminResidente','2019-10-23 08:12:00','adminResidente');
+INSERT INTO `tb_lista_catalogo` VALUES ('UNO','FPAGO','UNICO','2019-10-23 08:12:00','adminResidente','2019-10-23 08:12:00','adminResidente');
+INSERT INTO `tb_lista_catalogo` VALUES ('TFIJ','FPAGO','TERMINO FIJO','2019-10-23 08:12:00','adminResidente','2019-10-23 08:12:00','adminResidente');
+
+
+
+
